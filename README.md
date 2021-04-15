@@ -67,8 +67,7 @@ repository]($MyRepo/${PROJECT_NAME}/tags).
 
 ## License
 
-This project is licensed under the [CC BY-NC-SA 4.0 License](https://creativecommons.org/licenses/by-nc-sa/4.0/) - see the [LICENSE.md](LICENSE.md) file for
-details.
+This project is licensed under the GPL 3.0. See the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 

@@ -1,12 +1,12 @@
 # Paititi Research
 
-> Code and data used in the geospatial analysis by the [Patiti Research](https://paititi.info/) team
+> Code and data used in the geospatial analysis by the [Patiti Research](https://paititi.info/) team. It is developed to be run inside the [Google Earth Engine](https://earthengine.google.com/) platform. You need to have both Google (Gmail) and Google Earth Engine accounts in order to use it.
 
-The code, coupled with the provided data, allows studying the distribution of morphometric characteristics of terrain for specified point samples by making a chart and exporting the derived terrain products as GeoTiffs. In theory, it can bring insights on where to look for ancient settlements of Inca and other Andean cultures.
+The code, coupled with the provided data, allows studying the distribution of morphometric characteristics of terrain for specified point samples by making a chart and exporting the derived terrain products as GeoTiffs.
+
+In theory, it can bring insights on where to look for ancient settlements of Inca and other Andean cultures. See [a paper](https://www.sciencedirect.com/science/article/pii/S1040618215010666) of D. Visentin et al. (2016), who demonstrated **a correspondence between some modern paths and (pre-)historic tracks because mountain environments tend to constrain movements**. [Another paper](https://www.sciencedirect.com/science/article/pii/S1040618217314787) by S. Caracausi et al. (2018) suggests that at high altitudes, due to the same reason, **paths and locations suitable for temporary camps did not change significantly during the centuries.**
 
 ![Earth Engine screenshot](pics/gee-1.png)
-
-It is developed to be run inside the [Google Earth Engine](https://earthengine.google.com/) platform. You need to have both Google (Gmail) and Google Earth Engine accounts in order to use it.
 
 ## Content
 

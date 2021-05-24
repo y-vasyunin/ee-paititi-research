@@ -1,63 +1,34 @@
 # Paititi Research
-Various code used in the geospatial analysis searching for Paititi: https://paititi.info/
 
-## Summary
+> Code and data used in the geospatial analysis by the [Patiti Research](https://paititi.info/) team
 
-  - [Getting Started](#getting-started)
-  - [Runing the tests](#running-the-tests)
-  - [Usage](#uso)
-  - [Roadmap](#deployment)
-  - [Versioning](#versioning)
-  - [Contact](#contact)
-  - [License](#license)
-  - [Acknowledgments](#acknowledgments)
+The code, coupled with the provided data, allows studying the distribution of morphometric characteristics of terrain for specified point samples by making a chart and exporting the derived terrain products as GeoTiffs. In theory, it can bring insights on where to look for ancient settlements of Inca and other Andean cultures.
 
-## Getting Started
+![Earth Engine screenshot](pics/gee-1.png)
 
-These instructions will get you a copy of the project up and running on
-your local machine for development and testing purposes. See deployment
-for notes on how to deploy the project on a live system.
+It is developed to be run inside the [Google Earth Engine](https://earthengine.google.com/) platform. You need to have both Google (Gmail) and Google Earth Engine accounts in order to use it.
 
-### Prerequisites
+## Content
 
-What things you need to install the software and how to install them.
+### osm-terrain-study.js
 
-    Give examples
+A JavaScript code that takes the provided point samples making a 50-m buffer around them, and calculates terrain morphometry. In the end, it summarizes the statistics as a bar chart and allows exporting the resultant terrain raster.
 
-### Installing
+### data/osm_places.zip
 
-A step by step series of examples that tell you how to get a development
-env running.
+An extract of small settlements from OpenStreetMap, covering a vastAndean area of the Cusco Region and its surroundings in Peru. Pointswere selected by the condition `place IN ('hamlet', 'isolated_dwelling','farm', 'allotments')` on Feb 10, 2021.
 
-Say what the step will be.
+### data/osm_inca_sites.zip
 
-    Give the example
+Locations of various inca-related archaeological sites, extracted from OpenStreetMap using the *overpass turbo* with the following query:
 
-And repeat.
+    [out:json][timeout:25];
+    (node["historic:civilization"~"inca",i];
+    way["historic:civilization"~"inca",i];
+    relation["historic:civilization"~"inca",i];);
+    out body; >; out skel qt;
 
-    until finished
-
-End with an example of getting some data out of the system or using it
-for a little demo.
-
-## Running the tests
-
-Explain how to run the automated tests for this system.
-
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-For more examples, please refer to the [Documentation](http://example.com).
-
-## Roadmap
-
-See the [open issues]($MyRepo/${PROJECT_NAME}/issues) for a list of proposed features (and known issues).
-
-## Versioning
-
-This repo uses [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this
-repository]($MyRepo/${PROJECT_NAME}/tags).
+After OSM polygons had been extracted, they were converted to centroids and manually verified.
 
 ## Contact
 
@@ -67,10 +38,6 @@ repository]($MyRepo/${PROJECT_NAME}/tags).
 
 ## License
 
-This project is licensed under the GPL 3.0. See the [LICENSE](LICENSE) file for details.
+Except data sets, this project is licensed under the GPL 3.0. See the [LICENSE](LICENSE) file for details.
 
-## Acknowledgments
-
-  - Hat tip to anyone whose code was used
-  - Inspiration
-  - etc
+Data © [OpenStreetMap](https://www.openstreetmap.org/) contributors, [ODbL](https://opendatacommons.org/licenses/odbl/1-0/), [Terms](https://www.openstreetmap.org/copyright); Data acquisition by [overpass turbo](https://overpass-turbo.eu/).

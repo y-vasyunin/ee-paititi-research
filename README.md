@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5765415.svg)](https://doi.org/10.5281/zenodo.5765415)
+
 <p align="center"><img src="pics/logo.png" alt="Paititi Research Logo" width="400"></p>
 <h1 align="center">Data Processing Scripts for Earth Engine</h1>
 

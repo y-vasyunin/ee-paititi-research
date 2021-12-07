@@ -1,4 +1,5 @@
-# Paititi Research
+<p align="center"><img src="pics/logo.png" alt="Paititi Research Logo" width="400"></p>
+<h1 align="center">Data Processing Scripts for Earth Engine</h1>
 
 > Code and data used in the geospatial analysis by the [Patiti Research](https://paititi.info/) team. It is developed to be run inside the [Google Earth Engine](https://earthengine.google.com/) platform. You need to have both Google (Gmail) and Google Earth Engine accounts in order to use it.
 

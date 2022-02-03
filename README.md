@@ -37,7 +37,7 @@ After OSM polygons had been extracted, they were converted to centroids and manu
 
   - Organization: [Paititi Research](https://paititi.info/)
   - Developer: [Yaroslav Vasyunin](https://www.linkedin.com/in/vasyunin)
-  - Project Link: [github.com/y-vasyunin/paititi-research](https://github.com/y-vasyunin/paititi-research)
+  - Project Link: [github.com/y-vasyunin/ee-paititi-research](https://github.com/y-vasyunin/ee-paititi-research)
 
 ## License
 
